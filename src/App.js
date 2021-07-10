@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+// import React, { createContext } from 'react'
+// import ComA from './Components/ComA';
 
-function App() {
+
+import React from 'react';
+import UseReducer from './UseEffect/UseReducer';
+// import UseEffect1 from "./UseEffect/UseEffect1";
+// import CleanUp from "./UseEffect/CleanUp";
+// const FirstName = createContext(); 
+// const LastName = createContext(); 
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <UseEffect1 />
+      <CleanUp /> */}
+      <UseReducer />
+      {/* <FirstName.Provider value={"Gopal"}>
+        <LastName.Provider value={"Khandelwal"}>
+          <ComA />
+        </LastName.Provider>
+      </FirstName.Provider> */}
+      
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+// export {FirstName,LastName};
